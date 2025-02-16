@@ -1,9 +1,20 @@
 "use client";
+
 import { MdOutlineDarkMode } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
+import Image from "next/image";
+import { useRef } from "react";
 
 export default function Header() {
-  const handleOpenMenu = () => {};
+  const mobileMenuRef = useRef();
+
+  const handleOpenMenu = () => {
+    mobileMenuRef.current.style.transform = "translateX(-16rem)";
+  };
+
+  const handleCloseMenu = () => {
+    mobileMenuRef.current.style.transform = "translateX(16rem)";
+  };
 
   return (
     <header className="fixed top-0 w-full flex justify-center z-50 ">
@@ -41,24 +52,50 @@ export default function Header() {
         </div>
 
         {/* ----- mobile nav ----- */}
-        <ul className="bg-yellow-400 text-lg flex flex-col gap-4 md:hidden py-20 px-10 fixed top-0 bottom-0 w-64 z-50 h-screen -right-0 transition duration-500">
+        <ul
+          ref={mobileMenuRef}
+          className="bg-yellow-400 text-lg flex flex-col gap-4 md:hidden py-20 px-10 fixed top-0 bottom-0 w-64 z-50 h-screen -right-64 transition duration-500"
+        >
+          <button
+            className="absolute right-6 top-6 cursor-pointer"
+            onClick={handleCloseMenu}
+          >
+            <Image
+              src="/images/close-black.png"
+              alt="닫기 버튼"
+              className="w-5"
+              width={50}
+              height={50}
+            />
+          </button>
+
           <li>
-            <a href="#">Home</a>
+            <a onClick={handleCloseMenu} href="#">
+              Home
+            </a>
           </li>
           <li>
             <a href="#about-me">About Me</a>
           </li>
           <li>
-            <a href="#skills">Skills</a>
+            <a onClick={handleCloseMenu} href="#skills">
+              Skills
+            </a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a onClick={handleCloseMenu} href="#projects">
+              Projects
+            </a>
           </li>
           <li>
-            <a href="#career">Career</a>
+            <a onClick={handleCloseMenu} href="#career">
+              Career
+            </a>
           </li>
           <li>
-            <a href="#contact-me">Contact Me</a>
+            <a onClick={handleCloseMenu} href="#contact-me">
+              Contact Me
+            </a>
           </li>
         </ul>
       </nav>
