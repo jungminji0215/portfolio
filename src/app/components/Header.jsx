@@ -60,6 +60,7 @@ export default function Header() {
             className="absolute right-6 top-6 cursor-pointer"
             onClick={handleCloseMenu}
           >
+            {/* TODO react-icons 로 변경 */}
             <Image
               src="/images/close-black.png"
               alt="닫기 버튼"
