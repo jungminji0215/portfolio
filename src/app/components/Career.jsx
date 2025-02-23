@@ -9,7 +9,7 @@ export default function Career() {
       <ul className="border-l-2 border-l-yellow-300 my-10">
         <li className="relative pl-[1.6rem] mb-[1.2rem] before:content-[''] before:absolute before:top-0 before:left-[-0.65rem] before:w-[1.2rem] before:h-[1.2rem] before:bg-yellow-300 before:rounded-full">
           <div className="text-yellow-300 mb-2">2020 - 2021</div>
-          <h3 className="text-lg mb-4">보맵</h3>
+          <h3 className="text-lg mb-4">보맵ㄴ</h3>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil</p>
         </li>
 

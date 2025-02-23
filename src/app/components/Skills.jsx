@@ -5,6 +5,7 @@ export default function Skills() {
     <div className="bg-red-200 w-full max-w-3xl mx-auto flex flex-col items-center py-5 scroll-mt-20">
       <h2 className="text-5xl font-bold">Skills</h2>
       <p className="text-sm mb-5">아래의 기술을 사용해봤습니다.</p>
+
       <ul className="flex flex-col gap-10 my-10">
         <li className="p-8 rounded-xl shadow-md">
           <h3 className="text-xl font-bold mb-4">Frontend</h3>

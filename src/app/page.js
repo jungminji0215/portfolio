@@ -1,5 +1,6 @@
 import AboutMe from "./components/AboutMe";
 import Career from "./components/Career";
+import Contact from "./components/Contact";
 import Main from "./components/Main";
 import Skills from "./components/Skills";
 
@@ -31,7 +32,20 @@ export default function Home() {
       >
         <Career />
       </section>
-      <section className="bg-blue-300">Contact Me</section>
+
+      <section
+        id="project"
+        className="bg-green-200 h-screen flex items-center justify-center"
+      >
+        프로젝트
+      </section>
+
+      <section
+        id="contact"
+        className="bg-blue-200 h-screen flex items-center justify-center"
+      >
+        <Contact />
+      </section>
     </>
   );
 }
