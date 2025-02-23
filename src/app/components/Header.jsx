@@ -19,6 +19,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 w-full flex justify-center z-50 ">
       <nav className="w-5xl flex justify-between items-center p-5">
+        {/* TODO Link 로 바꾸기 */}
         <a href="#">
           <h1 className="text-2xl font-bold font-primary">Jungminji</h1>
         </a>
