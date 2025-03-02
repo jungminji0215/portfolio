@@ -8,6 +8,8 @@
   --color-darkHover: #2a004a;
   --color-darkTheme: #11001f;
 
+  --color-test: #9b111e;
+
   --font-primary: "SBAggroB", sans-serif;
 }
 
@@ -44,7 +46,8 @@
 /* font  */
 @font-face {
   font-family: "SBAggroB";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff") format("woff");
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
