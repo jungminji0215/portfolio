@@ -15,6 +15,9 @@ export default function ContactForm() {
     e.preventDefault();
     setBanner({ message: "이메일을 성공적으로 보냈습니다!", state: "success" });
     setTimeout(() => setBanner(null), 5000);
+
+    console.log("email :>> ", form.email);
+    console.log("message :>> ", form.message);
   };
 
   const handleChange = (e) => {
