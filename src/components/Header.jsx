@@ -75,7 +75,9 @@ export default function Header() {
             </a>
           </li>
           <li>
-            <a href="#about-me">About Me</a>
+            <a onClick={handleCloseMenu} href="#about-me">
+              About Me
+            </a>
           </li>
           <li>
             <a onClick={handleCloseMenu} href="#skills">

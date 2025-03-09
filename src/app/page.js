@@ -16,33 +16,33 @@ export default function Home() {
       </section>
       <section
         id="about-me"
-        className="h-screen flex items-center justify-center"
+        className="min-h-screen flex items-center justify-center bg-amber-200"
       >
         <AboutMe />
       </section>
       <section
         id="skills"
-        className="h-screen flex items-center justify-center"
+        className="min-h-screen flex items-center justify-center bg-red-200"
       >
         <Skills />
       </section>
 
       <section
         id="projects"
-        className="h-screen flex items-center justify-center"
+        className="min-h-screen flex items-center justify-center bg-blue-200"
       >
         <Project />
       </section>
       <section
         id="career"
-        className="h-screen flex items-center justify-center"
+        className="min-h-screen flex items-center justify-center bg-green-200"
       >
         <Career />
       </section>
 
       <section
         id="contact"
-        className="h-screen flex items-center justify-center"
+        className="min-h-screen flex items-center justify-center bg-amber-600"
       >
         <Contact />
       </section>

@@ -4,11 +4,11 @@ import React from "react";
 
 export default function Project() {
   return (
-    <div className="w-full max-w-3xl mx-auto flex flex-col items-center p-5">
-      <h2 className="text-5xl font-bold font-title">Projects</h2>
+    <div className="w-full max-w-3xl mx-auto flex flex-col items-center p-5 scroll-mt-20">
+      <h2 className="text-4xl font-bold font-title">Projects</h2>
       <p className="text-xs my-5">제가 만든 프로젝트입니다.</p>
 
-      <div className="grid md:grid-cols-3 grid-cols-1 sm:grid-cols-2 gap-6 my-10">
+      <div className="grid md:grid-cols-3 grid-cols-1 sm:grid-cols-2 gap-5 my-10">
         {/* 면접 타운 */}
         <div className=" hover:bg-lightHover border border-gray-400 rounded-lg px-8 py-12 cursor-pointer hover:-translate-y-1 duration-500">
           <div>🌼</div>
@@ -29,7 +29,7 @@ export default function Project() {
           </Link>
         </div>
 
-        <div className=" hover:bg-lightHover border border-gray-400 rounded-lg px-8 py-12 cursor-pointer hover:-translate-y-1 duration-500">
+        <div className=" hover:bg-lightHover border border-gray-400 rounded-lg px-8 py-10 cursor-pointer hover:-translate-y-1 duration-500">
           <div>🌼</div>
           <h3 className="text-lg my-4 text-gray-700 font-subtitle">
             개인 블로그

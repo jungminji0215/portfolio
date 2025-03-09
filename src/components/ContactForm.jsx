@@ -49,7 +49,7 @@ export default function ContactForm() {
         </p>
       )}
       <form
-        className="flex flex-col gap-2 w-full"
+        className="flex flex-col gap-2 w-full my-10"
         aria-labelledby="contact-form-title"
         onSubmit={handleSubmit}
       >
