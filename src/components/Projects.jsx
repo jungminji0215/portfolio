@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Project() {
   return (
-    <div className="w-full max-w-3xl mx-auto flex flex-col items-center p-5 scroll-mt-20">
+    <div className="w-full max-w-3xl mx-auto flex flex-col items-center p-5 scroll-mt-20 mt-20">
       <h2 className="text-4xl font-bold font-title">Projects</h2>
       <p className="text-xs my-5">제가 만든 프로젝트입니다.</p>
 

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Skills() {
   return (
-    <div className="w-full max-w-3xl mx-auto flex flex-col items-center p-5 scroll-mt-20">
+    <div className="w-full max-w-3xl mx-auto flex flex-col items-center p-5 scroll-mt-20 mt-20">
       <h2 className="text-4xl font-bold font-title">Skills</h2>
       <p className="text-xs my-5">아래의 기술을 사용해봤습니다.</p>
 

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Career() {
   return (
-    <div className="w-full max-w-3xl mx-auto flex flex-col items-center p-5 scroll-mt-20">
+    <div className="w-full max-w-3xl mx-auto flex flex-col items-center p-5 scroll-mt-20 mt-20">
       <h2 className="text-4xl font-bold font-title">Career</h2>
       <p className="text-xs mb-5 my-5">저의 개발 경력입니다.</p>
 
