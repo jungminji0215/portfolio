@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="flex items-center justify-center bg-gray-100">
       <p className="p-5 text-gray-500 text-xs">
-        Copyright 2024.Jung Minji.All rights rederved.
+        © Copyright 2025.Jung Minji.All rights reserved.
       </p>
     </footer>
   );
