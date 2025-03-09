@@ -9,7 +9,7 @@ export default function Skills() {
       <ul className="flex flex-col gap-10 my-10">
         <li className="p-8 rounded-xl shadow-md hover:-translate-y-1 duration-500">
           <h3 className="text-xl font-bold mb-4">Frontend</h3>
-          <div className="flex gap-2">
+          <div className="flex flex-wrap gap-2">
             <img
               src="https://img.shields.io/badge/html5-E34F26?style=flat-square&logo=html5&logoColor=white"
               className="my-4 rounded-sm"
