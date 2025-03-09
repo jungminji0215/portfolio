@@ -17,13 +17,12 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 w-full flex justify-center z-50 ">
+    <header className="fixed top-0 w-full flex justify-center z-50">
       <nav className="w-5xl flex justify-between items-center p-5">
-        {/* TODO Link 로 바꾸기 */}
         <a href="#">
-          <h1 className="text-2xl font-bold font-primary">Jungminji</h1>
+          <h1 className="text-xl font-bold font-title">Jungminji</h1>
         </a>
-        <ul className="hidden md:flex gap-4 items-center text-lg rounded-full px-8 py-3 bg-white shadow-sm ">
+        <ul className="hidden md:flex gap-4 items-center text-lg rounded-full px-8 py-3 bg-white shadow-sm font-subtitle">
           <li>
             <a href="#">Home</a>
           </li>
@@ -40,11 +39,11 @@ export default function Header() {
             <a href="#career">Career</a>
           </li>
           <li>
-            <a href="#contact-me">Contact Me</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
         <div className="flex items-center gap-5">
-          <button className="cursor-pointer">
+          <button className="cursor-pointer ml-14">
             <MdOutlineDarkMode className="text-3xl" />
           </button>
           <button className="md:hidden cursor-pointer" onClick={handleOpenMenu}>
@@ -61,7 +60,6 @@ export default function Header() {
             className="absolute right-6 top-6 cursor-pointer"
             onClick={handleCloseMenu}
           >
-            {/* TODO react-icons 로 변경 */}
             <Image
               src="/images/close-black.png"
               alt="닫기 버튼"
@@ -95,8 +93,8 @@ export default function Header() {
             </a>
           </li>
           <li>
-            <a onClick={handleCloseMenu} href="#contact-me">
-              Contact Me
+            <a onClick={handleCloseMenu} href="#contact">
+              Contact
             </a>
           </li>
         </ul>

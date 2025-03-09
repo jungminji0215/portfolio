@@ -16,13 +16,13 @@ export default function Home() {
       </section>
       <section
         id="about-me"
-        className="bg-yellow-200 h-screen flex items-center justify-center"
+        className="h-screen flex items-center justify-center"
       >
         <AboutMe />
       </section>
       <section
         id="skills"
-        className="bg-gray-200 h-screen flex items-center justify-center"
+        className="h-screen flex items-center justify-center"
       >
         <Skills />
       </section>
@@ -35,14 +35,14 @@ export default function Home() {
       </section>
       <section
         id="career"
-        className="bg-blue-200 h-screen flex items-center justify-center"
+        className="h-screen flex items-center justify-center"
       >
         <Career />
       </section>
 
       <section
         id="contact"
-        className="bg-yellow-200 h-screen flex items-center justify-center"
+        className="h-screen flex items-center justify-center"
       >
         <Contact />
       </section>

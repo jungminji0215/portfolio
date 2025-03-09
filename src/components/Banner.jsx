@@ -6,7 +6,7 @@ export default function Banner({ banner: { message, state } }) {
 
   return (
     <div
-      className={`bg-gray-200 p-2 m-2 rounded-md text-xs ${
+      className={`bg-gray-200 p-2 my-3 rounded-md text-xs font-content ${
         isSuccess ? "bg-green-300" : "bg-red-300"
       }`}
     >

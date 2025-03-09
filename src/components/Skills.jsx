@@ -2,12 +2,12 @@ import React from "react";
 
 export default function Skills() {
   return (
-    <div className="bg-red-200 w-full max-w-3xl mx-auto flex flex-col items-center py-5 scroll-mt-20">
-      <h2 className="text-5xl font-bold">Skills</h2>
-      <p className="text-sm mb-5">아래의 기술을 사용해봤습니다.</p>
+    <div className="w-full max-w-3xl mx-auto flex flex-col items-center p-5 scroll-mt-20">
+      <h2 className="text-5xl font-bold font-title">Skills</h2>
+      <p className="text-xs my-5">아래의 기술을 사용해봤습니다.</p>
 
       <ul className="flex flex-col gap-10 my-10">
-        <li className="p-8 rounded-xl shadow-md">
+        <li className="p-8 rounded-xl shadow-md hover:-translate-y-1 duration-500">
           <h3 className="text-xl font-bold mb-4">Frontend</h3>
           <div className="flex gap-2">
             <img
@@ -36,7 +36,7 @@ export default function Skills() {
             />
           </div>
         </li>
-        <li className="p-8 rounded-xl shadow-md">
+        <li className="p-8 rounded-xl shadow-md hover:-translate-y-1 duration-500">
           <h3 className="text-xl font-bold mb-4">Backend</h3>
           <div className="flex gap-2">
             <img

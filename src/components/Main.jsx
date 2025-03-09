@@ -22,7 +22,7 @@ export default function Main() {
       <div className="flex flex-col md:flex-row gap-2">
         <a
           href="#contact"
-          className="bg-yellow-400 px-5 py-3 rounded-full flex items-center gap-2 text-sm"
+          className="bg-yellow-400 px-5 py-3 rounded-full flex items-center gap-2 text-sm font-subtitle"
         >
           Contact
           <FaLongArrowAltRight className="text-white text-xl" />
@@ -30,7 +30,7 @@ export default function Main() {
         <a
           href="/resume.pdf"
           target="_blank"
-          className="bg-yellow-400 px-5 py-3 rounded-full flex items-center gap-2 text-sm"
+          className="bg-yellow-400 px-5 py-3 rounded-full flex items-center gap-2 text-sm font-subtitle"
         >
           Resume <FiDownload className="text-white text-xl" />
         </a>

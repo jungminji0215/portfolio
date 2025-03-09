@@ -41,9 +41,15 @@ export default function ContactForm() {
 
   return (
     <>
-      {banner && <Banner banner={banner} />}
+      {banner ? (
+        <Banner banner={banner} />
+      ) : (
+        <p className="text-xs p-2 my-3 font-content">
+          이메일로 연락 가능합니다.
+        </p>
+      )}
       <form
-        className="flex flex-col gap-2 w-full px-5"
+        className="flex flex-col gap-2 w-full"
         aria-labelledby="contact-form-title"
         onSubmit={handleSubmit}
       >
@@ -58,8 +64,8 @@ export default function ContactForm() {
           name="email"
           id="email"
           type="email"
-          className="border rounded-md p-2"
-          placeholder="이메일을 입력해주세요!"
+          className="border rounded-md p-3"
+          placeholder="이메일을 입력해주세요."
           required
           value={form.email}
           onChange={handleChange}
@@ -72,8 +78,8 @@ export default function ContactForm() {
           id="message"
           cols={30}
           rows={10}
-          className="border rounded-md resize-none p-2"
-          placeholder="어떤 내용이든 편하게 보내주세요! 😊"
+          className="border rounded-md resize-none p-3"
+          placeholder="어떤 내용이든 편하게 보내주세요.😊"
           value={form.message}
           onChange={handleChange}
           required

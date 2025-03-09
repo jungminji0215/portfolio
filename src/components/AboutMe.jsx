@@ -5,8 +5,8 @@ import React from "react";
 export default function AboutMe() {
   return (
     // TODO scroll-mt-20 지우기
-    <div className="bg-red-200 w-full max-w-3xl mx-auto flex flex-col items-center py-5 scroll-mt-20">
-      <h2 className="text-5xl font-bold mb-5">About Me</h2>
+    <div className="w-full max-w-3xl mx-auto flex flex-col items-center p-5 scroll-mt-20">
+      <h2 className="text-5xl font-bold mb-5 font-title">About Me</h2>
 
       <div className="flex gap-10">
         <section className="bg-yellow-300 flex items-center">
