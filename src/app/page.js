@@ -8,41 +8,38 @@ import Skills from "../components/Skills";
 export default function Home() {
   return (
     <>
-      <section
-        id="home"
-        className="bg-gray-200 h-screen flex items-center justify-center"
-      >
+      <section id="home" className="h-screen flex items-center justify-center">
         <Main />
       </section>
       <section
         id="about-me"
-        className="min-h-screen flex items-center justify-center bg-amber-200"
+        className="min-h-screen flex items-center justify-center"
       >
         <AboutMe />
       </section>
       <section
         id="skills"
-        className="min-h-screen flex items-center justify-center bg-red-200"
+        className="min-h-screen flex items-center justify-center"
       >
         <Skills />
       </section>
 
       <section
         id="projects"
-        className="min-h-screen flex items-center justify-center bg-blue-200"
+        className="min-h-screen flex items-center justify-center"
       >
         <Project />
       </section>
       <section
         id="career"
-        className="min-h-screen flex items-center justify-center bg-green-200"
+        className="min-h-screen flex items-center justify-center"
       >
         <Career />
       </section>
 
       <section
         id="contact"
-        className="min-h-screen flex items-center justify-center bg-amber-600"
+        className="min-h-screen flex items-center justify-center"
       >
         <Contact />
       </section>

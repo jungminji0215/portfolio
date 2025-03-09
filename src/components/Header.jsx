@@ -3,10 +3,40 @@
 import { MdOutlineDarkMode } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Image from "next/image";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Header() {
   const mobileMenuRef = useRef();
+
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  console.log("isDarkMode :>> ", isDarkMode);
+
+  const handleDarkMode = () => {
+    setIsDarkMode((prev) => !prev);
+  };
+
+  useEffect(() => {
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      setIsDarkMode(true);
+    } else {
+      setIsDarkMode(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add("dark");
+      localStorage.theme = "dark";
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.theme = "";
+    }
+  }, [isDarkMode]);
 
   const handleOpenMenu = () => {
     mobileMenuRef.current.style.transform = "translateX(-16rem)";
@@ -43,7 +73,7 @@ export default function Header() {
           </li>
         </ul>
         <div className="flex items-center gap-5">
-          <button className="cursor-pointer ml-14">
+          <button className="cursor-pointer ml-14" onClick={handleDarkMode}>
             <MdOutlineDarkMode className="text-3xl" />
           </button>
           <button className="md:hidden cursor-pointer" onClick={handleOpenMenu}>
