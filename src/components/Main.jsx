@@ -15,11 +15,13 @@ export default function Main() {
         priority
         className="rounded-full"
       />
-      <h3 className="text-xl md:text-5xl text-center">
-        안녕하세요! <br /> 프론트엔드 개발자
-        <strong> 정민지 </strong>입니다.
+      <h3 className="text-xl md:text-5xl text-center space-y-5">
+        <p> 안녕하세요!</p>
+        <p>
+          프론트엔드 개발자 <strong> 정민지 </strong>입니다.
+        </p>
       </h3>
-      <div className="flex flex-col md:flex-row gap-2">
+      <div className="flex flex-col md:flex-row gap-2 mb-10">
         <a
           href="#contact"
           className="bg-yellow-400 px-5 py-3 rounded-full flex items-center gap-2 text-sm font-subtitle"
@@ -35,7 +37,9 @@ export default function Main() {
           Resume <FiDownload className="text-white text-xl" />
         </a>
       </div>
-      <MdKeyboardDoubleArrowDown className="text-5xl" />
+      <a href="#about-me" className="text-5xl animate-bounce cursor-pointer">
+        <MdKeyboardDoubleArrowDown />
+      </a>
     </div>
   );
 }
