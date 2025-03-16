@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "motion/react";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Image from "next/image";

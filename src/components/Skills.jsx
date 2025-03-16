@@ -1,13 +1,40 @@
+"use client";
+
 import React from "react";
+import { motion } from "motion/react";
 
 export default function Skills() {
   return (
-    <div className="w-full max-w-3xl mx-auto flex flex-col items-center p-5 scroll-mt-20 mt-20">
-      <h2 className="text-4xl font-bold font-title">Skills</h2>
-      <p className="text-xs my-5">아래의 기술을 사용해봤습니다.</p>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      className="w-full max-w-3xl mx-auto flex flex-col items-center p-5 scroll-mt-20 mt-20"
+    >
+      <motion.h2
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className="text-4xl font-bold font-title"
+      >
+        Skills
+      </motion.h2>
+      <motion.p
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        className="text-xs my-5"
+      >
+        아래의 기술을 사용해봤습니다.
+      </motion.p>
 
       <ul className="flex flex-col gap-10 my-10">
-        <li className="p-8 rounded-xl shadow-md hover:-translate-y-1 duration-500">
+        <motion.li
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.7 }}
+          className="p-8 rounded-xl shadow-md hover:-translate-y-1 duration-500"
+        >
           <h3 className="text-xl font-bold mb-4">Frontend</h3>
           <div className="flex flex-wrap gap-2">
             <img
@@ -35,8 +62,13 @@ export default function Skills() {
               className="my-4 rounded-sm"
             />
           </div>
-        </li>
-        <li className="p-8 rounded-xl shadow-md hover:-translate-y-1 duration-500">
+        </motion.li>
+        <motion.li
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.7 }}
+          className="p-8 rounded-xl shadow-md hover:-translate-y-1 duration-500"
+        >
           <h3 className="text-xl font-bold mb-4">Backend</h3>
           <div className="flex gap-2">
             <img
@@ -44,8 +76,8 @@ export default function Skills() {
               className="my-4 rounded-sm"
             />
           </div>
-        </li>
+        </motion.li>
       </ul>
-    </div>
+    </motion.div>
   );
 }

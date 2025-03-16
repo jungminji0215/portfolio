@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Banner from "./Banner";
 import { sendContactEmail } from "@/service/contact";
+import { motion } from "motion/react";
 
 const DEFAULT_DATA = {
   email: "",
@@ -44,11 +45,19 @@ export default function ContactForm() {
       {banner ? (
         <Banner banner={banner} />
       ) : (
-        <p className="text-xs p-2 my-3 font-content">
+        <motion.p
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="text-xs p-2 my-3 font-content"
+        >
           이메일로 연락 가능합니다.
-        </p>
+        </motion.p>
       )}
-      <form
+      <motion.form
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.7 }}
         className="flex flex-col gap-2 w-full my-10"
         aria-labelledby="contact-form-title"
         onSubmit={handleSubmit}
@@ -90,7 +99,7 @@ export default function ContactForm() {
         >
           이메일 보내기
         </button>
-      </form>
+      </motion.form>
     </>
   );
 }
