@@ -25,8 +25,20 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="ko" className="scroll-smooth">
-      <body className="font-content dark:bg-darkTheme dark:text-white">
+    <html lang="ko" className="scroll-smooth" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const theme = localStorage.getItem('theme') || "light";
+                document.documentElement.classList.add('dark');               
+              })();`,
+          }}
+        />
+      </head>
+      <body className="font-content ">
+        {/* <body className="font-content dark:bg-darkTheme dark:text-white"> */}
         <Header />
         <main>{children}</main>
         <Footer />
