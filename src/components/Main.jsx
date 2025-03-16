@@ -8,12 +8,12 @@ export default function Main() {
   return (
     <div className="w-11/12 max-w-3xl mx-auto flex flex-col items-center gap-10 py-5">
       <Image
-        src="/images/minji.jpeg"
+        src="/jungminji.png"
         alt="프로필 사진"
         width={250}
         height={250}
         priority
-        className="rounded-full border"
+        className="rounded-full"
       />
       <h3 className="text-xl md:text-5xl text-center">
         안녕하세요! <br /> 프론트엔드 개발자
