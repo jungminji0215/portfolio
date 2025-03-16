@@ -8,33 +8,24 @@ import { useEffect, useRef, useState } from "react";
 export default function Header() {
   const mobileMenuRef = useRef();
 
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  console.log("isDarkMode :>> ", isDarkMode);
+  const [isDarkMode, setIsDarkMode] = useState(null);
 
   const handleDarkMode = () => {
     setIsDarkMode((prev) => !prev);
   };
 
   useEffect(() => {
-    if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      setIsDarkMode(true);
-    } else {
-      setIsDarkMode(false);
-    }
+    const theme = localStorage.getItem("theme");
+    setIsDarkMode(theme === "dark");
   }, []);
 
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.classList.add("dark");
-      localStorage.theme = "dark";
+      localStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
-      localStorage.theme = "";
+      localStorage.setItem("theme", "light");
     }
   }, [isDarkMode]);
 
@@ -74,7 +65,7 @@ export default function Header() {
         </ul>
         <div className="flex items-center gap-5">
           <button className="cursor-pointer ml-14" onClick={handleDarkMode}>
-            <MdOutlineDarkMode className="text-3xl" />
+            {/* <MdOutlineDarkMode className="text-3xl" /> */}
           </button>
           <button className="md:hidden cursor-pointer" onClick={handleOpenMenu}>
             <GiHamburgerMenu className="text-3xl" />
