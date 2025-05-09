@@ -1,28 +1,28 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 /* font  */
 @font-face {
-  font-family: "RiaSans-ExtraBold";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/RiaSans-ExtraBold.woff2")
-    format("woff2");
+  font-family: 'RiaSans-ExtraBold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/RiaSans-ExtraBold.woff2')
+    format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "WooridaumB";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/WooridaumB.woff2")
-    format("woff2");
+  font-family: 'WooridaumB';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/WooridaumB.woff2')
+    format('woff2');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "GoyangIlsan";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangIlsan.woff")
-    format("woff");
+  font-family: 'GoyangIlsan';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangIlsan.woff')
+    format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -36,9 +36,9 @@
   --color-darkTheme: #212121;
 
   /* font */
-  --font-title: "RiaSans-ExtraBold", sans-serif;
-  --font-subtitle: "WooridaumB", sans-serif;
-  --font-content: "GoyangIlsan", sans-serif;
+  --font-title: 'RiaSans-ExtraBold', sans-serif;
+  --font-subtitle: 'WooridaumB', sans-serif;
+  --font-content: 'GoyangIlsan', sans-serif;
 }
 
 /*
@@ -59,13 +59,11 @@
   }
 }
 
-
 @layer components {
   .wrapper {
     @apply flex min-h-screen items-center justify-center;
   }
 }
-
 
 :root {
   --background: #ffffff;
