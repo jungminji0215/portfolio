@@ -59,6 +59,14 @@
   }
 }
 
+
+@layer components {
+  .wrapper {
+    @apply flex min-h-screen items-center justify-center;
+  }
+}
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
