@@ -1,4 +1,4 @@
-import AboutMe from '../components/AboutMe';
+import AboutMe from '../components/aboutMe/AboutMe';
 import Career from '../components/Career';
 import Contact from '../components/Contact';
 import Main from '../components/Main';
