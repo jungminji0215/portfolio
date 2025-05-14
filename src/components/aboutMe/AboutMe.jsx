@@ -12,16 +12,16 @@ export default function AboutMe() {
   return (
     <section id="about-me" className="wrapper">
       <div className="mx-auto mt-20 flex max-w-4xl scroll-mt-20 flex-col items-center p-5">
-        <motion.div>
+        <div>
           <SectionTitle>About Me</SectionTitle>
           <SectionSubTitle>저를 소개합니다.</SectionSubTitle>
-        </motion.div>
+        </div>
 
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.7 }}
-          className="flex gap-5 md:flex-row"
+          className="flex flex-col gap-5 lg:flex-row"
         >
           <section className="card flex items-center">
             <p>
@@ -81,25 +81,25 @@ export default function AboutMe() {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.7 }}
-          className="card mt-4 w-full"
+          className="card mt-4 flex w-full flex-col gap-5"
         >
-          <div className="flex items-center gap-4">
-            <h3 className="text-center text-lg">Frontend</h3>
-            <ul className="flex justify-center gap-1">
+          <div>
+            <h3>Frontend</h3>
+            <ul className="flex flex-wrap gap-1">
               {skillFrontendData.map((skill, index) => (
                 <li key={index}>
-                  <img src={skill.skillImage} alt="기술 아이콘" className="my-4 rounded-sm" />
+                  <img src={skill.skillImage} alt="기술 아이콘" className="rounded-sm" />
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="flex items-center gap-4">
-            <h3 className="text-center text-lg">Backend</h3>
-            <ul className="flex justify-center gap-1">
+          <div>
+            <h3>Backend</h3>
+            <ul className="flex flex-wrap gap-1">
               {skillBackendData.map((skill, index) => (
                 <li key={index}>
-                  <img src={skill.skillImage} alt="기술 아이콘" className="my-4 rounded-sm" />
+                  <img src={skill.skillImage} alt="기술 아이콘" className="rounded-sm" />
                 </li>
               ))}
             </ul>

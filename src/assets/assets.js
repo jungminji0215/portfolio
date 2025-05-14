@@ -34,15 +34,19 @@ export const skillFrontendData = [
   },
   {
     skillImage:
-      'https://img.shields.io/badge/typescript-3178C6?style=flat-square&logo=typescript&logoColor=white',
-  },
-  {
-    skillImage:
       'https://img.shields.io/badge/react-61DAFB?style=flat-square&logo=react&logoColor=white',
   },
   {
     skillImage:
+      'https://img.shields.io/badge/typescript-3178C6?style=flat-square&logo=typescript&logoColor=white',
+  },
+  {
+    skillImage:
       'https://img.shields.io/badge/next.js-000000?style=flat-square&logo=next.js&logoColor=white',
+  },
+  {
+    skillImage:
+      'https://img.shields.io/badge/tailwindcss-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white',
   },
 ];
 
@@ -50,5 +54,13 @@ export const skillBackendData = [
   {
     skillImage:
       'https://img.shields.io/badge/Spring-3DDC84?style=flat-square&logo=Spring&logoColor=white',
+  },
+  {
+    skillImage:
+      'https://img.shields.io/badge/express-000000?style=flat-square&logo=express&logoColor=white',
+  },
+  {
+    skillImage:
+      'https://img.shields.io/badge/mysql-4479A1?style=flat-square&logo=mysql&logoColor=white',
   },
 ];
