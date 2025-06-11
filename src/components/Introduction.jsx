@@ -1,20 +1,19 @@
-"use client";
-
-import React from "react";
-import { motion } from "motion/react";
+import MotionText from '@/components/motion/MotionText';
 
 export default function Introduction() {
   return (
-    <motion.h3
-      initial={{ y: -20, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.6, delay: 0.3 }}
-      className="text-xl md:text-5xl text-center space-y-5"
-    >
-      <p> 안녕하세요!</p>
-      <p>
-        프론트엔드 개발자 <strong> 정민지 </strong>입니다.
-      </p>
-    </motion.h3>
+    <div className="space-y-5">
+      <h3 className="text-center text-3xl md:text-5xl">
+        <MotionText split="word" preset="slide" delay={0.5}>
+          안녕하세요!
+        </MotionText>
+      </h3>
+
+      <h3 className="text-center text-3xl md:text-5xl">
+        <MotionText split="word" preset="slide" delay={1}>
+          프론트엔드 개발자 정민지 입니다.
+        </MotionText>
+      </h3>
+    </div>
   );
 }

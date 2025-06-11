@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
-import Banner from "./Banner";
-import { sendContactEmail } from "@/service/contact";
-import { motion } from "motion/react";
+import { useState } from 'react';
+import Banner from './Banner';
+import { sendContactEmail } from '@/service/contact';
+import { motion } from 'motion/react';
 
 const DEFAULT_DATA = {
-  email: "",
-  message: "",
+  email: '',
+  message: '',
 };
 
 export default function ContactForm() {
@@ -20,12 +20,12 @@ export default function ContactForm() {
 
     try {
       sendContactEmail(form);
-      setBanner({ message: "메일을 성공적으로 보냈습니다!", state: "success" });
+      setBanner({ message: '메일을 성공적으로 보냈습니다!', state: 'success' });
       setForm(DEFAULT_DATA);
     } catch (error) {
       setBanner({
-        message: "메일 전송에 실패했습니다. 다시 시도해 주세요.",
-        state: "error",
+        message: '메일 전송에 실패했습니다. 다시 시도해 주세요.',
+        state: 'error',
       });
     } finally {
       setTimeout(() => setBanner(null), 5000);
@@ -49,7 +49,7 @@ export default function ContactForm() {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className="text-xs p-2 my-3 font-content"
+          className="font-content my-3 p-2 text-xs"
         >
           이메일로 연락 가능합니다.
         </motion.p>
@@ -58,7 +58,7 @@ export default function ContactForm() {
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.7 }}
-        className="flex flex-col gap-2 w-full my-10"
+        className="my-10 flex w-full flex-col gap-2"
         aria-labelledby="contact-form-title"
         onSubmit={handleSubmit}
       >
@@ -73,7 +73,7 @@ export default function ContactForm() {
           name="email"
           id="email"
           type="email"
-          className="border rounded-md p-3"
+          className="rounded-md border p-3"
           placeholder="이메일을 입력해주세요."
           required
           value={form.email}
@@ -87,7 +87,7 @@ export default function ContactForm() {
           id="message"
           cols={30}
           rows={10}
-          className="border rounded-md resize-none p-3"
+          className="resize-none rounded-md border p-3"
           placeholder="어떤 내용이든 편하게 보내주세요.😊"
           value={form.message}
           onChange={handleChange}
@@ -95,7 +95,7 @@ export default function ContactForm() {
         />
         <button
           type="submit"
-          className="rounded-md cursor-pointer p-2 bg-yellow-300 hover:bg-yellow-400"
+          className="cursor-pointer rounded-md bg-yellow-300 p-2 hover:bg-yellow-400"
         >
           이메일 보내기
         </button>

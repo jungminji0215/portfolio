@@ -1,6 +1,7 @@
 import './globals.css';
-import Header from '../components/header/Header';
+
 import Footer from '../components/Footer';
+import Header from '../components/header/Header';
 
 export const metadata = {
   metadataBase: new URL('https://jungminji.vercel.app'),
@@ -8,21 +9,6 @@ export const metadata = {
   description: '프론트엔드 개발자 정민지의 포트폴리오 사이트',
   icons: {
     icon: '/favicon.ico',
-  },
-  openGraph: {
-    type: 'website',
-    title: '프론트엔드 개발자 정민지',
-    description: '프론트엔드 개발자 정민지의 포트폴리오 사이트',
-    url: 'https://jungminji.vercel.app',
-    siteName: '정민지 포트폴리오 사이트',
-    images: [
-      {
-        url: '/hero.png',
-        width: 1200,
-        height: 630,
-        alt: '정민지 이미지',
-      },
-    ],
   },
 };
 

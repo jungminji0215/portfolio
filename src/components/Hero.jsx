@@ -1,16 +1,9 @@
-'use client';
-
-import React from 'react';
-import { motion } from 'motion/react';
 import Image from 'next/image';
+import MotionWrapper from '@/components/motion/MotionWrapper';
 
 export default function Hero() {
   return (
-    <motion.div
-      initial={{ scale: 0 }}
-      whileInView={{ scale: 1 }}
-      transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
-    >
+    <MotionWrapper as="div" preset="scaleIn">
       <Image
         src="/hero.png"
         alt="프로필 사진"
@@ -19,6 +12,6 @@ export default function Hero() {
         priority
         className="rounded-full"
       />
-    </motion.div>
+    </MotionWrapper>
   );
 }
